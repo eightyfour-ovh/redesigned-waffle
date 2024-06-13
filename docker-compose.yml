@@ -1,0 +1,20 @@
+services:
+  waffle:
+    hostname: waffle
+    container_name: waffle
+    # image: ghcr.io/eightyfour-ovh/redesigned-waffle:main
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    ports:
+      - "8888:8000"  # nginx -> (php-fpm + prometheus)
+    environment:
+      - XDEBUG_MODE=coverage
+    volumes:
+      - ./:/app
+    networks:
+      eightyfour:
+
+networks:
+  eightyfour:

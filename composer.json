@@ -1,0 +1,16 @@
+{
+    "name": "eightyfour/redesigned-waffle",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Eightyfour\\RedesignedWaffle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Leslie Petrimaux"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
