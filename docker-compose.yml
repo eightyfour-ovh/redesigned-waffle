@@ -2,7 +2,7 @@ services:
   waffle:
     hostname: waffle
     container_name: waffle
-    # image: ghcr.io/eightyfour-ovh/redesigned-waffle:main
+    image: ghcr.io/eightyfour-ovh/redesigned-waffle:main
     build:
       context: .
       dockerfile: Dockerfile
